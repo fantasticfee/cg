@@ -1,4 +1,4 @@
-package movie
+package cg1
 
 const (
 	REGULAR    = 0
