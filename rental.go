@@ -27,11 +27,11 @@ func (r *Rental)GetCharge() float64 {
 					thisAmount += ()
 				}
 			case NEW_RELEASE:
-				thisAmount += (aRental.GetDaysRented() - 2) * 1.5
+				thisAmount += (GetDaysRented() - 2) * 1.5
 			case CHILDRENS:
 				thisAmount += 1.5
 				if aRental.GetDaysRented() > 3 {
-					thisAmount += (aRental.GetDaysRented() - 3) * 1.5
+					thisAmount += (GetDaysRented() - 3) * 1.5
 				}
 			}
 			return result
